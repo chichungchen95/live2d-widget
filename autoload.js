@@ -1,3 +1,4 @@
+//===============================================================Live2D Script===============================================================
 // live2d_path 参数建议使用绝对路径
 const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
 //const live2d_path = "/live2d-widget/";
@@ -27,9 +28,9 @@ function loadExternalResource(url, type) {
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
 	Promise.all([
-		loadExternalResource(live2d_path + "waifu.css", "css"),
-		loadExternalResource(live2d_path + "live2d.min.js", "js"),
-		loadExternalResource(live2d_path + "waifu-tips.js", "js")
+		loadExternalResource("assets/css/waifu.css", "css"),
+		loadExternalResource("assets/js/live2d.min.js", "js"),
+		loadExternalResource("assets/js/waifu-tips.js", "js")
 	]).then(() => {
 		// 配置选项的具体用法见 README.md
 		initWidget({

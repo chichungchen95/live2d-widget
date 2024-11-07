@@ -58,19 +58,21 @@ const tools = {
     "info": {
         icon: fa_info_circle,
         callback: () => {
+            showMessage("95:請支持作者", 6000, 9);
             open("https://github.com/stevenjoezhang/live2d-widget");
         }
     },
     "quit": {
         icon: fa_xmark,
         callback: () => {
-            localStorage.setItem("waifu-display", Date.now());
+            /*localStorage.setItem("waifu-display", Date.now());
             showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
             document.getElementById("waifu").style.bottom = "-500px";
             setTimeout(() => {
                 document.getElementById("waifu").style.display = "none";
                 document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
-            }, 3000);
+            }, 3000);*/
+            showMessage("誒 失效！", 6000, 9);
         }
     }
 };
